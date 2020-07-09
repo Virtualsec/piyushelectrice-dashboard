@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  margin: 0 !important ;
+}
+
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+table,
+tbody,
+thead th {
+  border: 0px !important;
+}
+
+tbody tr,
+.nav-link {
+  cursor: pointer;
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  z-index: 4;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #00000090;
+}
