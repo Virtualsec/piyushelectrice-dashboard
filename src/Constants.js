@@ -1,6 +1,6 @@
 import Axios from "axios";
 
-Axios.defaults.baseURL = "https://piyushelectric.herokuapp.com";
+Axios.defaults.baseURL = "https://piyushelectrics.herokuapp.com";
 
 const initialClientState = {
   name: "",
