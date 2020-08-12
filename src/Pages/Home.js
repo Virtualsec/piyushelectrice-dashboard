@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import uuid from "uuid/v4";
 import { Axios } from "../Constants";
 import { isLoggedIn } from "../utils";
+import {AddClient} from "../AddClient.js"
 
 export default class extends Component {
   constructor() {
@@ -30,8 +31,13 @@ export default class extends Component {
   render = () => {
     const { clients } = this.state;
     return (
-      <div className="container mt-5">
-        {clients.length > 0 && (
+      <div className="container-fluid mt-5">
+        <div class="row">
+          <div class="col-md-4">
+          <AddClient/>
+          </div>
+          <div class="col-md-8">
+          {clients.length > 0 && (
           <table id="clients" className="table table-hover">
             <thead>
               <tr>
@@ -63,6 +69,8 @@ export default class extends Component {
             </tbody>
           </table>
         )}
+          </div>
+        </div>
       </div>
     );
   };
