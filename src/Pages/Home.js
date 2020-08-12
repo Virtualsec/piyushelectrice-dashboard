@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import uuid from "uuid/v4";
 import { Axios } from "../Constants";
 import { isLoggedIn } from "../utils";
-import {AddClient} from "../AddClient.js"
+import {AddClient} from "AddClient.js"
 
 export default class extends Component {
   constructor() {
